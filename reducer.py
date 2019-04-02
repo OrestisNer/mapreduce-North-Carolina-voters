@@ -3,10 +3,6 @@
 
 import sys
 
-#orig_stdout = sys.stdout
-#f = open("finalDataOutputfileSort.txt", "w")
-#sys.stdout = f
-
 current_key=None
 current_value=None
 i=0
@@ -26,14 +22,14 @@ for line in sys.stdin:
         if current_key and i>0:
             print(current_key+"\t"+current_value)
             i=0
-		elif current_key and (' ' in current_value):
-			print(current_key+"\t"+current_value)
-			i=0
+	elif current_key and (' ' in current_value):
+	    print(current_key+"\t"+current_value)
+	    i=0
         current_value = value
         current_key = key
-
 #prints last input in case it's a dublicate
 if(i>0):
     print(current_key+"\t"+current_value)
 #elif(' ' in current_value):
 	#print(current_key+"\t"+current_value)
+

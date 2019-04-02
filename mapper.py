@@ -22,7 +22,7 @@ for line in input_stream:
 
     key = line[9] + line[10] + line[11] + line[14]
     value = line[68]
-	print('%s\t%s' % (key, value))
+    print('%s\t%s' % (key, value))
         #case of duplicate
     if key in myDictionary:
         myDictionary[key] = myDictionary[key] + " " + value
