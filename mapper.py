@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 """mapper.py"""
@@ -9,6 +8,7 @@ myDictionary = {}
 threshold = 5000
 # input comes from STDIN (standard input)
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='windows-1252')
+
 for line in input_stream:
     line = re.findall("\"[^\"]*\"", line)
     # we already know which columns we need
