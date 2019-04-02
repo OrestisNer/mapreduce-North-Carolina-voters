@@ -26,7 +26,9 @@ for line in sys.stdin:
         if current_key and i>0:
             print(current_key+"\t"+current_value)
             i=0
-
+		elif current_key and (' ' in current_value):
+			print(current_key+"\t"+current_value)
+			i=0
         current_value = value
         current_key = key
 
