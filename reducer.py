@@ -26,14 +26,14 @@ for line in sys.stdin:
         if current_key and i>0:
             print(current_key+"\t"+current_value)
             i=0
-		elif current_key and (' ' in current_value):
-			print(current_key+"\t"+current_value)
-			i=0
+	elif current_key and (' ' in current_value):
+	    print(current_key+"\t"+current_value)
+	    i=0
         current_value = value
         current_key = key
 
 
-#if(i>0):
-    #print(current_key+"\t"+current_value)
+if(i>0):
+    print(current_key+"\t"+current_value)
 #sys.stdout = orig_stdout
 #f.close()
