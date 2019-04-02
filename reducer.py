@@ -32,8 +32,8 @@ for line in sys.stdin:
         current_value = value
         current_key = key
 
-
-#if(i>0):
-    #print(current_key+"\t"+current_value)
-#sys.stdout = orig_stdout
-#f.close()
+#prints last input in case it's a dublicate
+if(i>0):
+    print(current_key+"\t"+current_value)
+#elif(' ' in current_value):
+	#print(current_key+"\t"+current_value)
