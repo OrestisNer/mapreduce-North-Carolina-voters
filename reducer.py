@@ -27,8 +27,8 @@ for line in sys.stdin:
             print(current_key+"\t"+current_value)
             dublicate_counter = 0
         # in this last case if we hadnt classify the entry as duplicate we check if the mapper did so
-        # in case that the entry has been merged in the mapping phase we do print it
-        elif (' ' in current_value) and current_key:
+        # in case that the entry has been merged in the mapping phase we print it
+        elif current_key and (' ' in current_value):
             print(current_key+"\t"+current_value)
             dublicate_counter = 0
         current_value = value
